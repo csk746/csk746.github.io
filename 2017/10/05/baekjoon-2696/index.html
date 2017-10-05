@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>백준 2579 계단오르기 | GHDOC</title>
+    <title>백준 2696 중앙값 구하기 | GHDOC</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="문제 링크 : https://www.acmicpc.net/problem/2579 Code - JAVA 1234567891011121314151617181920212223242526272829303132333435363738394041424344import java.util.Scanner;/** * Created by geonheelee on 2017. 5">
+    <meta name="description" content="문제 링크 : https://www.acmicpc.net/problem/2696 Code - JAVA 1234567891011121314151617181920212223242526272829303132import java.util.*;/** * Created by geonheelee on 2017. 5. 2.. */public class Problem26">
 <meta property="og:type" content="article">
-<meta property="og:title" content="백준 2579 계단오르기">
-<meta property="og:url" content="https://csk746.github.io/2017/10/03/baekjoon-2579/index.html">
+<meta property="og:title" content="백준 2696 중앙값 구하기">
+<meta property="og:url" content="https://csk746.github.io/2017/10/05/baekjoon-2696/index.html">
 <meta property="og:site_name" content="GHDOC">
-<meta property="og:description" content="문제 링크 : https://www.acmicpc.net/problem/2579 Code - JAVA 1234567891011121314151617181920212223242526272829303132333435363738394041424344import java.util.Scanner;/** * Created by geonheelee on 2017. 5">
+<meta property="og:description" content="문제 링크 : https://www.acmicpc.net/problem/2696 Code - JAVA 1234567891011121314151617181920212223242526272829303132import java.util.*;/** * Created by geonheelee on 2017. 5. 2.. */public class Problem26">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://csk746.github.io/css/images/baekjoon_thumbnail.png">
-<meta property="og:updated_time" content="2017-10-03T10:06:55.000Z">
+<meta property="og:updated_time" content="2017-10-05T11:10:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="백준 2579 계단오르기">
-<meta name="twitter:description" content="문제 링크 : https://www.acmicpc.net/problem/2579 Code - JAVA 1234567891011121314151617181920212223242526272829303132333435363738394041424344import java.util.Scanner;/** * Created by geonheelee on 2017. 5">
+<meta name="twitter:title" content="백준 2696 중앙값 구하기">
+<meta name="twitter:description" content="문제 링크 : https://www.acmicpc.net/problem/2696 Code - JAVA 1234567891011121314151617181920212223242526272829303132import java.util.*;/** * Created by geonheelee on 2017. 5. 2.. */public class Problem26">
 <meta name="twitter:image" content="https://csk746.github.io/css/images/baekjoon_thumbnail.png">
     
 
@@ -139,14 +139,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="blog-baekjoon-2579" class="article article-single article-type-blog" itemscope itemprop="blogPost">
+                            <article id="post-baekjoon-2696" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        백준 2579 계단오르기
+        백준 2696 중앙값 구하기
         </h1>
     
 
@@ -156,8 +156,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/10/03/baekjoon-2579/" class="article-date">
-            <time datetime="2017-10-03T09:25:49.000Z" itemprop="datePublished">2017-10-03</time>
+        <a href="/2017/10/05/baekjoon-2696/" class="article-date">
+            <time datetime="2017-10-05T10:51:01.000Z" itemprop="datePublished">2017-10-05</time>
         </a>
     </div>
 
@@ -166,17 +166,17 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/css/images/baekjoon-2579-1.png" alt=""></p>
-<p>문제 링크 : <a href="https://www.acmicpc.net/problem/2579" target="_blank" rel="external">https://www.acmicpc.net/problem/2579</a></p>
+            <p><img src="/css/images/baekjoon-2696-1.png" alt=""></p>
+<p>문제 링크 : <a href="https://www.acmicpc.net/problem/2696" target="_blank" rel="external">https://www.acmicpc.net/problem/2696</a></p>
 <p>Code - JAVA</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Created by geonheelee on 2017. 5. 2..</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Problem2579</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">static</span> <span class="keyword">int</span> dp[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">301</span>];</div><div class="line">    <span class="keyword">static</span> <span class="keyword">int</span> stair[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">301</span>];</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        <span class="keyword">int</span> cnt = sc.nextInt();</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;cnt+<span class="number">1</span>; i++)&#123;</div><div class="line">            stair[i]=sc.nextInt();</div><div class="line">        &#125;</div><div class="line">        dp[<span class="number">1</span>] = stair[<span class="number">1</span>];</div><div class="line">        dp[<span class="number">2</span>] =dp[<span class="number">1</span>]+stair[<span class="number">2</span>];</div><div class="line">        </div><div class="line">        <span class="comment">//3번째 계단입장에서 첫번째를 밟아 올라오는 경우와, 두번쨰를 밟아 올라오는 경우 두가지가 있다.</span></div><div class="line">        <span class="comment">//즉 두 경우중 큰 경우가 세 번째 계단이서 가장 높은 점수를 받을 수 있는 경우이다. </span></div><div class="line">        </div><div class="line">        dp[<span class="number">3</span>] = max(stair[<span class="number">2</span>]+stair[<span class="number">3</span>],stair[<span class="number">1</span>]+stair[<span class="number">3</span>]);</div><div class="line">        </div><div class="line">        <span class="comment">//위 논리를 이어간다면</span></div><div class="line">        <span class="comment">//4번째 계단의 경우 자기보다 2번째 직전계단의 최대값(dp[i-2]) 를 밟고 올라온 경우,</span></div><div class="line">        <span class="comment">//자기보다 하나 이전 계단(i-1)을 밟고 올라온 경우 이다.</span></div><div class="line">        <span class="comment">//하지만 연속된 3개의 계단은 밟을 수 없기에 직전 계단(i-1)을 밟은 경우는</span></div><div class="line">        <span class="comment">//직전 계단의 전전계단(i-3)을 밟고온 경우밖에 없다. 즉 dp[i-3]을 밟고 온 경우이다.</span></div><div class="line">        <span class="comment">//이 두가지 경우 중 더 큰 경우를 계산하여 dp[i]에 넣으면 된다.</span></div><div class="line">   </div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">4</span>; i&lt;cnt+<span class="number">1</span>; i++)&#123;</div><div class="line">            dp[i] = max(dp[i-<span class="number">2</span>]+stair[i],dp[i-<span class="number">3</span>]+stair[i]+stair[i-<span class="number">1</span>]);</div><div class="line">        &#125;</div><div class="line">        System.out.println(dp[cnt]);</div><div class="line"></div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> m)</span></span>&#123;</div><div class="line">        <span class="keyword">if</span>(n&gt;=m)</div><div class="line">            <span class="keyword">return</span> n;</div><div class="line">        <span class="keyword">else</span></div><div class="line">            <span class="keyword">return</span> m;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.*;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Created by geonheelee on 2017. 5. 2..</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Problem2696</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        <span class="keyword">int</span> tc = sc.nextInt();</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;tc; i++)&#123;</div><div class="line">            <span class="keyword">int</span> len = sc.nextInt();</div><div class="line">            <span class="comment">//주어진 리스트를 담는 배열</span></div><div class="line">            List&lt;Integer&gt; arr = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</div><div class="line">            <span class="comment">//정답을 담는 배열</span></div><div class="line">            List&lt;Integer&gt; ans = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt; len+<span class="number">1</span>; j++)&#123;</div><div class="line">                arr.add(sc.nextInt());</div><div class="line">                <span class="comment">// 홀수일 때 마다 정렬한 뒤 중앙값을 추출</span></div><div class="line">                <span class="keyword">if</span> (j%<span class="number">2</span>==<span class="number">1</span>)&#123;</div><div class="line">                    Collections.sort(arr);</div><div class="line">                    ans.add(arr.get(arr.size()/<span class="number">2</span>));</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            System.out.println(ans.size());</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;ans.size(); j++)&#123;</div><div class="line">                System.out.print(ans.get(j)+<span class="string">" "</span>);</div><div class="line">            &#125;</div><div class="line">            System.out.println();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://csk746.github.io/2017/10/03/baekjoon-2579/" data-id="cj8ed2lal0001u4zarrgh5fda" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://csk746.github.io/2017/10/05/baekjoon-2696/" data-id="cj8ed2las0003u4zagumj5snz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -297,20 +297,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2017/10/05/baekjoon-2696/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            백준 2696 중앙값 구하기
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/10/02/baekjoon-1149/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/10/03/baekjoon-2579/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">백준 1149 RGB거리</p>
+        <p class="article-nav-title">백준 2579 계단오르기</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -476,7 +466,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://csk746.github.io/2017/10/03/baekjoon-2579/';
+    var disqus_url = 'https://csk746.github.io/2017/10/05/baekjoon-2696/';
     
     (function() {
     var dsq = document.createElement('script');
