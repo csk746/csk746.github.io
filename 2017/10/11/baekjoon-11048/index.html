@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>백준 2493 탑 | GHDOC</title>
+    <title>백준 11048 이동하기 | GHDOC</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="문제 링크 : https://www.acmicpc.net/problem/2493 Code - JAVA 1234567891011121314151617181920212223242526272829303132333435363738394041424344import java.io.BufferedReader;import java.io.IOException;import">
+    <meta name="description" content="문제 링크 : https://www.acmicpc.net/problem/11048 Code - JAVA 123456789101112131415161718192021222324252627282930313233343536373839404142import java.util.Scanner;/** * Created by geonheelee on 2017. 5. 1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="백준 2493 탑">
-<meta property="og:url" content="https://csk746.github.io/2017/10/06/baekjoon-2493/index.html">
+<meta property="og:title" content="백준 11048 이동하기">
+<meta property="og:url" content="https://csk746.github.io/2017/10/11/baekjoon-11048/index.html">
 <meta property="og:site_name" content="GHDOC">
-<meta property="og:description" content="문제 링크 : https://www.acmicpc.net/problem/2493 Code - JAVA 1234567891011121314151617181920212223242526272829303132333435363738394041424344import java.io.BufferedReader;import java.io.IOException;import">
+<meta property="og:description" content="문제 링크 : https://www.acmicpc.net/problem/11048 Code - JAVA 123456789101112131415161718192021222324252627282930313233343536373839404142import java.util.Scanner;/** * Created by geonheelee on 2017. 5. 1">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://csk746.github.io/css/images/baekjoon_thumbnail.png">
-<meta property="og:updated_time" content="2017-10-06T11:16:55.000Z">
+<meta property="og:updated_time" content="2017-10-11T14:26:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="백준 2493 탑">
-<meta name="twitter:description" content="문제 링크 : https://www.acmicpc.net/problem/2493 Code - JAVA 1234567891011121314151617181920212223242526272829303132333435363738394041424344import java.io.BufferedReader;import java.io.IOException;import">
+<meta name="twitter:title" content="백준 11048 이동하기">
+<meta name="twitter:description" content="문제 링크 : https://www.acmicpc.net/problem/11048 Code - JAVA 123456789101112131415161718192021222324252627282930313233343536373839404142import java.util.Scanner;/** * Created by geonheelee on 2017. 5. 1">
 <meta name="twitter:image" content="https://csk746.github.io/css/images/baekjoon_thumbnail.png">
     
 
@@ -135,14 +135,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-baekjoon-2493" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="blog-baekjoon-11048" class="article article-single article-type-blog" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        백준 2493 탑
+        백준 11048 이동하기
         </h1>
     
 
@@ -152,8 +152,8 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/10/06/baekjoon-2493/" class="article-date">
-            <time datetime="2017-10-06T11:04:23.000Z" itemprop="datePublished">2017-10-06</time>
+        <a href="/2017/10/11/baekjoon-11048/" class="article-date">
+            <time datetime="2017-10-11T14:19:58.000Z" itemprop="datePublished">2017-10-11</time>
         </a>
     </div>
 
@@ -162,18 +162,17 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/css/images/baekjoon-2493-1.png" alt=""></p>
-<p>문제 링크 : <a href="https://www.acmicpc.net/problem/2493" target="_blank" rel="external">https://www.acmicpc.net/problem/2493</a></p>
+            <p><img src="/css/images/baekjoon-11048-1.png" alt=""></p>
+<p>문제 링크 : <a href="https://www.acmicpc.net/problem/11048" target="_blank" rel="external">https://www.acmicpc.net/problem/11048</a></p>
 <p>Code - JAVA</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.io.InputStreamReader;</div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"><span class="keyword">import</span> java.util.Stack;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Problem2493</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">        Stack&lt;Integer&gt; st = <span class="keyword">new</span> Stack&lt;Integer&gt;();</div><div class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(System.in));</div><div class="line">        <span class="comment">//타워의 갯수</span></div><div class="line">        <span class="keyword">int</span> towerCnt = sc.nextInt();</div><div class="line">        <span class="comment">//각 타워의 높이를 담는 배열</span></div><div class="line">        <span class="keyword">int</span>[] height = <span class="keyword">new</span> <span class="keyword">int</span>[towerCnt + <span class="number">1</span>];</div><div class="line">        <span class="comment">//결과를 담는 배열</span></div><div class="line">        <span class="keyword">int</span>[] result = <span class="keyword">new</span> <span class="keyword">int</span>[towerCnt + <span class="number">1</span>];</div><div class="line"></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=towerCnt;i++) &#123;</div><div class="line">            height[i] = sc.nextInt();</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//왼쪽부터 카운트 하기 때문에 인덱스가 카운트 개수부터</span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=towerCnt;i&gt;=<span class="number">1</span>;i--)&#123;</div><div class="line">            <span class="comment">//스택이 비어있지 않고 스택의 맨 위 타워의 높이가 현재 타워의 높이보다 낮은 경우</span></div><div class="line">            <span class="comment">//스택에 타워를 하나씩 넣는데 뽑아서 비교를 했을때</span></div><div class="line">            <span class="comment">//더 크다는 것은 신호를 수신한다는 말이다</span></div><div class="line">            <span class="comment">//예를들어 문제의 ( 6 9 5 7 4 ) 경우</span></div><div class="line">            <span class="comment">//스택에 5(위),7이 들어있는경우 9와 비교할때</span></div><div class="line">            <span class="comment">//먼저 5와 9를 비교하고 5가 작기 때문에 9의 인덱스를 정답에 넣는다</span></div><div class="line">            <span class="comment">//그 뒤 7과 9를 비교하는데 다시 7이 작기 때문에 9의 인덱스를 정답에 넣는다.</span></div><div class="line">            <span class="comment">//만약 9가 아니라 6이었다면 ( 6 6 5 7 4 )</span></div><div class="line">            <span class="comment">//5와 6을 비교해서 5가 더 작기 때문에 6의 인덱스를 정답에 넣고</span></div><div class="line">            <span class="comment">//그 뒤 6과 7을 비교하여 7이 더 크기 때문에 정답에 넣지 않고 6의 인덱스를 스택에 넣는다</span></div><div class="line">            <span class="keyword">while</span>(!st.isEmpty() &amp;&amp; height[st.peek()] &lt; height[i])&#123;</div><div class="line">                result[st.pop()] = i;</div><div class="line">            &#125;</div><div class="line">            st.push(i);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=towerCnt;i++)&#123;</div><div class="line">            System.out.print(result[i]+<span class="string">" "</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Created by geonheelee on 2017. 5. 17..</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Problem11048</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        <span class="keyword">int</span> N = sc.nextInt();</div><div class="line">        <span class="keyword">int</span> M = sc.nextInt();</div><div class="line">        <span class="keyword">int</span> map[][] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">1005</span>][<span class="number">1005</span>];</div><div class="line">        <span class="keyword">int</span> dp[][] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">1005</span>][<span class="number">1005</span>];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">1</span>; i&lt;=N; i++)&#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j =<span class="number">1</span>; j&lt;=M;j++)&#123;</div><div class="line">                map[i][j] = sc.nextInt();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i =<span class="number">1</span>; i&lt;=N; i++)&#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j =<span class="number">1</span>; j&lt;=M;j++)&#123;</div><div class="line">                <span class="comment">//이전 움직임중 대각선, 왼쪽, 오른쪽으로 가는 것중 최고값과</span></div><div class="line">                <span class="comment">//지금 값을 더한 값을 dp값으로 산정한다</span></div><div class="line">                <span class="comment">//dp[i][j]는 i, j일때 최대값이기 때문에 다음 수에서 이 d[i][j]와</span></div><div class="line">                <span class="comment">//그 다음 비용을 더하면 된다.</span></div><div class="line">                dp[i][j] = max(dp[i-<span class="number">1</span>][j-<span class="number">1</span>],dp[i][j-<span class="number">1</span>],dp[i-<span class="number">1</span>][j]) + map[i][j];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        System.out.println(dp[N][M]);</div><div class="line"></div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> m, <span class="keyword">int</span> l)</span></span>&#123;</div><div class="line"></div><div class="line">        <span class="keyword">int</span> max =<span class="number">0</span>;</div><div class="line">        <span class="keyword">if</span> (n &gt; max)</div><div class="line">            max = n;</div><div class="line">        <span class="keyword">if</span> (m &gt; max)</div><div class="line">            max = m;</div><div class="line">        <span class="keyword">if</span> (l &gt; max)</div><div class="line">            max = l;</div><div class="line">        <span class="keyword">return</span> max;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://csk746.github.io/2017/10/06/baekjoon-2493/" data-id="cj8n4prai0005w0za9hf9v64v" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://csk746.github.io/2017/10/11/baekjoon-11048/" data-id="cj8n4pr9z0000w0zadav108d3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -298,20 +297,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2017/10/06/angular01-architecture/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            Angular-01-아키텍처
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/10/05/baekjoon-1021/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/10/08/baekjoon-2776/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">백준 1021 회전하는큐</p>
+        <p class="article-nav-title">백준 2776 암기왕</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -497,7 +486,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://csk746.github.io/2017/10/06/baekjoon-2493/';
+    var disqus_url = 'https://csk746.github.io/2017/10/11/baekjoon-11048/';
     
     (function() {
     var dsq = document.createElement('script');
