@@ -3,17 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2017 | GHDOC</title>
+    <title>백준 1912 연속합 | GHDOC</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="GHDOC">
-<meta property="og:url" content="https://csk746.github.io/archives/2017/page/2/index.html">
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="문제 링크 : https://www.acmicpc.net/problem/1912 Code - JAVA 1234567891011121314151617181920212223import java.util.Arrays;import java.util.Scanner;/** * Created by csk746(csk746@naver.com) on 2017. 10. 2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="백준 1912 연속합">
+<meta property="og:url" content="https://csk746.github.io/2017/10/22/baekjoon-1912/index.html">
 <meta property="og:site_name" content="GHDOC">
+<meta property="og:description" content="문제 링크 : https://www.acmicpc.net/problem/1912 Code - JAVA 1234567891011121314151617181920212223import java.util.Arrays;import java.util.Scanner;/** * Created by csk746(csk746@naver.com) on 2017. 10. 2">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://csk746.github.io/css/images/baekjoon_thumbnail.png">
+<meta property="og:updated_time" content="2017-10-22T04:04:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GHDOC">
+<meta name="twitter:title" content="백준 1912 연속합">
+<meta name="twitter:description" content="문제 링크 : https://www.acmicpc.net/problem/1912 Code - JAVA 1234567891011121314151617181920212223import java.util.Arrays;import java.util.Scanner;/** * Created by csk746(csk746@naver.com) on 2017. 10. 2">
+<meta name="twitter:image" content="https://csk746.github.io/css/images/baekjoon_thumbnail.png">
     
 
     
@@ -123,128 +131,120 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Archive: 2017
+    <a class="page-title-link" href="/categories/Algoritsm/">Algoritsm</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-baekjoon-1912" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2017/10/02/baekjoon-1149/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/css/images/baekjoon_thumbnail.png)" alt="백준 1149 RGB거리" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://csk746.github.io/2017/10/02/baekjoon-1149/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Algoritsm/">Algoritsm</a>
-            </div>
-            <div class="date"><time datetime="2017-10-02T03:58:19.000Z" itemprop="datePublished">2017-10-02</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2017/10/02/baekjoon-1149/">백준 1149 RGB거리</a>
+        백준 1912 연속합
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/10/22/baekjoon-1912/" class="article-date">
+            <time datetime="2017-10-22T04:02:47.000Z" itemprop="datePublished">2017-10-22</time>
+        </a>
+    </div>
+
+                
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/css/images/baekjoon-1912-1.png" alt=""></p>
+<p>문제 링크 : <a href="https://www.acmicpc.net/problem/1912" target="_blank" rel="external">https://www.acmicpc.net/problem/1912</a></p>
+<p>Code - JAVA</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Created by csk746(csk746@naver.com) on 2017. 10. 22..</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Problem1912</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</div><div class="line">        <span class="keyword">int</span> num = sc.nextInt();</div><div class="line">        <span class="keyword">int</span> arr[] = <span class="keyword">new</span> <span class="keyword">int</span>[num];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i&lt; num; i++)&#123;</div><div class="line">            arr[i] = sc.nextInt();</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//가장 큰수와 두 번째로 큰 수를 더하면 되기 때문에</span></div><div class="line">        <span class="comment">//정렬을 한 뒤 가장 뒤 인덱스, 그 이전 인덱스의 값을 더해준다.</span></div><div class="line">        Arrays.sort(arr);</div><div class="line">        <span class="keyword">int</span> sum = arr[arr.length-<span class="number">1</span>]+arr[arr.length-<span class="number">2</span>];</div><div class="line">        System.out.println(sum);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+        </div>
+        <footer class="article-footer">
             
-문제 링크 : https://www.acmicpc.net/problem/1149
-Code - JAVA
-123456789101112131415161718192021222324252627282930313233343536373839404142import java.util.*;public class Problem1149 &#123;    public static
-        </p>
+
+
+
+    <a data-url="https://csk746.github.io/2017/10/22/baekjoon-1912/" data-id="cj928ceod0005i4zaq4yqykti" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2017/10/02/initial/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/css/images/intro.png)" alt="Document Intro" class="thumbnail-image"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://csk746.github.io/2017/10/02/initial/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/GHDoc/">GHDoc</a>
-            </div>
-            <div class="date"><time datetime="2017-10-01T17:31:50.000Z" itemprop="datePublished">2017-10-02</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/10/02/initial/">Document Intro</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            intro이 블로그는 개발 기록 혹은 리뷰에 관한 글을 남기는 블로그 입니다.담겨져있는 내용은 개인의 주관을 포함하고 있으며 다소 틀린 내용이 있을 수도 있습니다.댓글로 남겨주시거나 개인적으로 연락을 주신다면 수정하도록 하겠습니다.
-
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
+
     
-        </div>
-    
-
-
-    </div></section>
-
-
-    <nav id="page-nav">
-        <span class="pages">Page 2 of 2</span>
-        <a class="extend prev" rel="prev" href="/archives/2017/">&laquo;</a><a class="page-number" href="/archives/2017/">1</a><span class="page-number current">2</span>
-    </nav>
+    </section>
 
 
                         </div>
@@ -292,6 +292,19 @@ Code - JAVA
     <!--<div class="github-card" data-github="csk746" data-width="340" data-height="150" data-theme="default"></div>-->
     <!--<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>-->
 
+
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/10/15/baekjoon-1978/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">baekjoon 1978 소수찾기</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
 
     
     <div class="widgets-container">
@@ -473,11 +486,13 @@ Code - JAVA
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'https://csk746.github.io/2017/10/22/baekjoon-1912/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
